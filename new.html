@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        }
+
+ /* section-1 styles */
+
+        #section1{
+             background-image:url('./gallery/dream-pulse-header.jpg');
+             background-image: rgba(0, 0, 0, 5.5);
+             background-size: cover;
+             background-position: center;
+             padding: 1%;  
+        }
+        .div1{
+            position: fixed;
+            width: 30%;
+            height: 100%;
+            padding-top: 1.5%;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+        .heads{
+            width: 50%;
+            height: 20%;
+            border: 2px solid white;    
+        }
+        .h2{
+            padding: 15%;
+            color: white;
+            border: 2px solid white;
+            margin-left: 6%;
+            margin-top: 4%;
+            margin-right: -5%;
+        }
+        ul{
+            width: 50%;
+            color: white;
+            margin-top: 10%;
+            list-style-type: none;
+        }
+        .square{
+            position: absolute;
+            margin-top: -5%;
+            margin-left: 27%;
+            background-color: white;
+            width: 4%;
+            height: 3%;
+            display: none ;
+        }
+        .square1{
+            margin-left: 15%;
+        }
+        .square2{
+            margin-left: 17%;
+        }
+        .square3{
+            margin-left: 16%;
+        }
+        .square4{
+            margin-left: 20%;
+        }
+        .square5{
+            margin-left: 26%;
+        }
+        #square1:hover .square1 {
+            display: block;
+        }
+        #square2:hover .square2 {
+            display: block;
+        }
+        #square3:hover .square3 {
+            display: block;
+        }
+        #square4:hover .square4 {
+            display: block;
+        }
+        #square5:hover .square5 {
+            display: block;
+        }
+        #square1:hover,
+        #square2:hover,
+        #square3:hover,
+        #square4:hover,
+        #square5:hover {
+            animation: blink 0.5s infinite ;
+        }
+        @keyframes blink {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: .5;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .ion{
+            display: flex;
+            gap: 10%;  
+        }
+        .ion-icon1{
+            margin-left: -125%;
+            font-size: 150%;
+            color: black;
+            background-color: white;
+        }
+        .ion-icon1:hover{
+            color: white;
+            background-color: #069;
+        }
+        .para{
+            color: white;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        .float{
+            border: 2px solid white;
+            padding:50px;
+            margin:8%;
+            margin-top: 10%;
+            width:90%;
+        }
+        .float h3{
+            color: #069;
+        }
+        .float p{
+            color: #333;
+            word-spacing: 0.2cm;
+        }
+         
+ /* section-1 ends */
+
+
+    /* header starts */
+       .t1{
+        position: fixed;
+        width: 60px;
+        padding-top: 8px;
+        font-size: 35px;
+        margin: 8px;
+        background-color: #8b8585;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        color: white;
+        z-index: 1;
+       }
+
+
+       .t1:focus+.div1{
+           display: block;
+           transition: display 0.3s ease;
+           width: 280px;
+        }
+              
+        .t1:focus+.div1>.heads{
+            margin-left: 50px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .t1:focus+.div1 .ion{
+            margin-left: 60px;
+        }
+        .t1:focus+.div1 ul{
+            margin-left: 60px;
+            font-weight: bold;
+        }
+        .t1:focus+.div1 .para{
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .t1:focus + .div1 #square1 .square {
+            display: none;
+        } 
+        .t1:focus + .div1 #square2 .square {
+            display: none;
+        }
+        .t1:focus + .div1 #square3 .square {
+            display: none;
+        }
+        .t1:focus + .div1 #square4 .square {
+            display: none;
+        }
+        .t1:focus + .div1 #square5 .square {
+            display: none;
+        }
+
+        .t1:focus{
+            margin-left: 280px;
+        }
+    /* header ends */
+
+ /* section-2 starts */
+
+        .s21{
+            margin-top: 20%;
+            margin-left: 20%;
+            width: 70%;
+        }
+        .s21 img {
+            width: 30%;
+        }
+        .s21 h4{
+            color: #069;
+            }
+        .s21 p{
+            color: #707172;
+            line-height: 2;
+        }
+
+ /* section-2 ends */
+
+ /* section-3 starts */
+        
+        .sec3{
+            margin-left: 10%;
+            margin-top: 20%;
+            width: 80%;
+            border: 1px solid rgb(184, 181, 181)  ;
+            border-radius: 5px;
+        }
+        .s3{
+            margin-top: 1.3%;
+            margin-left: 1.5%;
+            margin-right: -2.5%;
+            margin-bottom: -3%;
+            border-radius: 5px;
+            border: 1px solid rgb(184, 181, 181) ;
+        }
+        .s31{
+            display:flex;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            overflow-x:scroll;
+            gap: 2%;
+            padding: 7%;
+            padding-left: 0;
+            margin-right: 7%;
+            margin-left: 7%;
+            margin-top: 7%;
+            margin-bottom:-5%; 
+        }
+        .s31::-webkit-scrollbar {
+            display: none;
+        }
+        .s31 img{
+            width: 240px;
+            margin-top: 4%;
+        }
+        .s3h{
+            position:absolute;
+            margin-top: 4%;
+            margin-left: 4%;
+            color:#069;
+        }
+        .s32{
+            margin-left: 20%;
+            margin-bottom: 5%;
+            margin-top: 3%;
+        }
+        .s32 button{
+            border-radius: 50%;
+            width: 2px;
+            height: 12px;
+            margin:1%;
+            border: none;
+            background-color: rgb(184, 181, 181) ;
+        }
+        button:hover{
+            background-color: black;
+        }
+ /* section-3 ends */
+
+ /* section-4 starts */
+        .sec4{
+            margin-top: 20%;
+            margin-left: 16%;
+            width: 60%;
+        }
+        .s4 h4{
+            color:#069;
+        }
+        .s4 p{
+            color: #707172;
+            line-height: 2;
+        }
+        .s41{
+            margin-top: 10%;
+            width: 125%;
+        }
+        .s41 img{
+            width: 200px;
+            padding: 3% 4%;
+            margin-left: 2%;
+            margin-bottom: 7%;
+            border: 1px solid rgb(184, 181, 181);
+            border-radius: 8px;
+            display: block;
+        }
+        @media screen and (width > 575px ){
+            .s41{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-top: 10%;
+           }
+        }
+ /* section-4 ends */
+
+ /* section-5 starts */
+
+        .sec5{
+            margin-top: 20%;
+            margin-left: 15%;
+            width: 70%;
+        }
+        .s5{
+            border: 2px solid rgb(184, 181, 181);
+        }
+        .s51{
+            border: 2px solid rgb(184, 181, 181);
+            padding: 10%;
+            margin-left: 2%;
+            margin-top: 2%;
+            margin-bottom: -3%;
+            margin-right: -3%;
+        }
+        .s51 h4{
+            color:#069;
+        }
+        .s51 p{
+            color: #707172;
+            line-height: 2;
+        }
+        input , textarea{
+            border: none;
+            border-bottom: 2px solid rgb(184, 181, 181);
+            color: gray ;
+            font-size: 1.2rem;
+        }
+        #ib{
+            width: 70px;
+            height: 29px;
+            color: black;
+            margin-left: 180px;
+            margin-top: 20px;
+            margin-bottom: 20%;
+        }
+        input:focus{
+            outline: none;
+            border-bottom: 2px solid lightblue;
+        }
+        textarea:focus{
+            outline: none;
+            border-bottom: 2px solid lightblue;
+        }
+        #ib:focus{
+            background: #707172;
+        } 
+
+ /* section-5 ends */
+
+                                                                      /* MEDIA QUERIESSSSSSS */
+
+        @media screen and (width > 990px){
+            .btn{
+                display: none;
+            }
+        #section1{
+            background-image:url('./gallery/dream-pulse-header.jpg');
+            display: grid;
+            grid-template-columns: repeat(2, 30%);
+            grid-template-rows: repeat(1, 100%);
+        }
+        .div1{
+            display: block;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .ion{
+            display: flex;
+            gap: 10%;  
+        }
+        ion-icon{
+            margin-left: -125%;
+            font-size: 150%;
+            color: black;
+            background-color: white;
+        }
+        ion-icon:hover{
+            color: white;
+            background-color: #069;
+        }
+        .float{
+            width: 110%;
+            margin-top: 25%;
+            margin-bottom: 30%;
+            margin-left: 100%;
+            border: 2px solid white;
+            padding: 15.5%;
+        }
+        #section2{
+            display: grid;
+            grid-template-columns: repeat(3,30%);
+            grid-template-rows: repeat(1, 100%);
+        }
+        #section3{
+           display: grid;
+           grid-template-columns:repeat(2, 30%);
+           grid-template-rows:100%;
+        }
+        .sec3{
+            margin-left: 20%;
+            width: 200%;
+            height: 85%;
+        }
+        .s3h{
+           margin-top: 2%;
+       }
+        .s3{
+            height: 101%;
+            margin-right: -1.5%;
+            margin-bottom: -5%;
+        }
+        .s3 img{
+            width: 250px;
+        }
+        .s31{
+            padding-bottom: 1%; 
+            margin-top: -2%;
+        }
+        .s32{
+            margin-left: 35%;
+            margin-top: 2%;
+        }
+        .s32 button{
+            margin-left: 1%;
+            margin-top: 5.5%;
+        }
+        #section4 {
+           display: grid;
+           grid-template-columns:repeat(2, 30%);
+           grid-template-rows:100%;
+           justify-content: space-between;
+        }
+        .sec4{
+            margin-left: -110%;
+            margin-top: 30%;
+            width: 160%;
+        }
+        #section5{
+           display: grid;
+           grid-template-columns: repeat(3, 30%);
+           grid-template-rows: repeat(1,100%);
+        }
+        .sec5{
+            margin-left: 20%;
+            width: 80%;
+            height: 65%;
+        }
+        
+        .grid{
+            background-color: gray;
+            height: 120%;
+        }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="section1">
+        <nav  class="toggler">
+            <button class="t1 btn">
+                <ion-icon name="menu-outline"></ion-icon>
+              </button>
+
+        <div class="div1">
+
+            <div class="heads">
+                <div class="h2">
+                     <h2>DREAM PULSE</h2>
+                </div>
+            </div>
+    
+            <ul>
+                <div id="square1"><li>INTRO</li><div class="square square1"></div></div><br>
+                <div id="square2"><li id="square2">ABOUT</li><div class="square square2"></div></div><br>
+                <div id="square3"><li>WORK</li><div class="square square3"></div></div><br>
+                <div id="square4"><li>CLIENTS</li><div class="square square4"></div></div><br>
+                <div id="square5"><li>LET'S TALK</li><div class="square square5"></div></div><br>
+            </ul><br>
+               
+            <ul class="ion">
+                <li><ion-icon class="ion-icon1" name="logo-facebook"></ion-icon></li>
+                <li><ion-icon class="ion-icon1" name="logo-twitter"></ion-icon></li>
+                <li><ion-icon class="ion-icon1" name="basketball-outline"></ion-icon></li>
+                <li><ion-icon class="ion-icon1" name="logo-linkedin"></ion-icon></li>
+            </ul>
+                
+            <div class="para">
+                <p>Copyright 2020 Dream Pulse</p>
+                <p>Design:Template Mo</p>
+            </div>
+    
+        </div>
+
+    </nav> 
+
+        <div class="float">
+            <h3>INTRODUCING DREAM PULSE</h3><br><br><br>
+            <p>This box alpha 30 percent. Left sidebar is a sticky element. Right side Contents are scrolling up and down. This background has a parallax effect.</p><br><br>
+            <p>Dream Pulse is a Bootstrap 4.3.1 template designed for your websites. You can modify this layout as you like.</p>
+        </div>
+    </div>
+
+    <div id="section2">
+        <div class="grid"></div>
+        <div class="s21">
+            <img src="./gallery/balance.png"><br><br><br>
+            <h4>About Us</h4><br>
+            <p>When first section is scrolled up, BG image will be disappeared with a parallax effect. Donec ac tempor tellus, a eleifend ligula. Fusce vitae sem sed purus euismod condimentum.</p><br><br><br>
+            <p>Sed at orci non metus tristique suscipit vitae in nibh. Sed rutrum odio ac est hendrerit, at vestibulum felis condimentum.</p>
+        </div>
+        <div class="s21">
+            <img src="./gallery/building.png"><br><br><br>
+            <h4>Company Profile</h4><br>
+            <p>You can use this template for your commercial websites or for your clients. You are NOT allowed to re-post this template as a downloadable ZIP file on your template collection sites. It is illegal.</p><br><br><br>
+            <p>Suspendisse fermentum orci eget lorem euismod suscipit. Morbi condimentum odio metus, at finibus dolor sollicitudin quis. Curabitur eu congue erat.</p>
+        </div>
+    </div>
+
+    <div id="section3">
+        <div class="grid"></div>
+        <div class="sec3">
+            <div class="s3">
+                <h2 class="s3h">Our Work</h2>
+                <div class="s31">
+                <img id="img1" src="./gallery/01.jpg">
+                <img id="img2" src="./gallery/02.jpg">
+                <img id="img3" src="./gallery/03.jpg">
+                <img id="img4" src="./gallery/04.jpg">
+                <img id="img5" src="./gallery/05.jpg">
+                <img id="img6" src="./gallery/06.jpg">
+                <img id="img7" src="./gallery/07.jpg">
+                <img id="img8" src="./gallery/08.jpg">
+                <img id="img9" src="./gallery/09.jpg">
+                </div>
+                <div class="s32">
+                    <label for="img1"><button></button></label>
+                    <label for="img2"><button></button></label>
+                    <label for="img3"><button></button></label>
+                    <label for="img4"><button></button></label>
+                    <label for="img5"><button></button></label>
+                    <label for="img6"><button></button></label>
+                    <label for="img7"><button></button></label>
+                    <label for="img8"><button></button></label>
+                    <label for="img9"><button></button></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4">
+        <div class="grid"></div>
+        <div class="sec4">
+          <div class="s4">
+            <h4>Our Clients</h4><br>
+            <p>Aenean est augue, iaculis ut arcu a, cursus tempus eros. Maecenas ut efficitur lectus, vel commodo nibh. Vivamus consequat massa non euismod facilisis. Morbi assumsan non libero a vehicula. Donec blandit suscipit magna sit amet elementum.</p>
+          </div>
+          <div class="s41">
+            <img src="./gallery/client-1.png">
+            <img src="./gallery/client-2.png">
+            <img src="./gallery/client-3.png">
+            <img src="./gallery/client-4.png">
+            <img src="./gallery/client-5.png">
+            <img src="./gallery/client-6.png">
+            <img src="./gallery/client-7.png">
+            <img src="./gallery/client-8.png">
+          </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="section5">
+        <div class="grid"></div>  
+        <div class="s5 sec5">
+            <div class="s51">
+                <h4> Talk to Us</h4><br>
+                <p>Sed aliquet, nibh ac hendrerit faucibus, tellus metus viverra tellus, vel volutpat purus orci ac ex.</p><br><br>
+                <p>120-240 Orci varius natoque penatibus,
+                    parturient montes, 10660
+                    nasvetur ridiculus mus.</p>
+            </div>
+          </div>
+          <div class="sec5">
+          <form>
+            <label for="YN"></label><br>
+            <input id="YN" type="text" placeholder="Your Name" required><br><br>
+            
+            <label for="YE"></label><br>
+            <input id="YE" type="email" placeholder="Your Email" required><br><br>
+            
+            <label for="MSG"></label><br>
+            <textarea rows="8" cols="20" id="MSG">Message...</textarea><br><br>
+           
+            <label for="ib" ></label>
+            <input id="ib" type="submit" value="SEND">
+          </form>
+          </div>
+    </div >
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
